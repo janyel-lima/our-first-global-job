@@ -23,6 +23,9 @@
       <!-- Mission & Motto Section -->
       <MissionSection @open-join="isJoinModalOpen = true" />
 
+      <!-- Team & Project Leadership Section -->
+      <TeamSection @open-join="isJoinModalOpen = true" />
+
       <!-- Community Stories & Impact -->
       <CommunityStories />
     </main>
@@ -48,6 +51,7 @@ import PillarsSection from './components/PillarsSection.vue';
 import AppShowcaseSection from './components/AppShowcaseSection.vue';
 import CommunityGroupsSection from './components/CommunityGroupsSection.vue';
 import MissionSection from './components/MissionSection.vue';
+import TeamSection from './components/TeamSection.vue';
 import CommunityStories from './components/CommunityStories.vue';
 import Footer from './components/Footer.vue';
 import JoinModal from './components/JoinModal.vue';

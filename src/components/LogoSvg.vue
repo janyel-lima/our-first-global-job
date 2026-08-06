@@ -42,13 +42,17 @@ const props = withDefaults(defineProps<{
   withBrandName: true
 });
 
+const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
+  ? import.meta.env.BASE_URL 
+  : `${import.meta.env.BASE_URL}/`;
+
 const logoSrc = computed(() => {
   switch (props.variant) {
-    case 'transparency': return '/logo-transparency.svg';
-    case 'footer': return '/logo-footer.svg';
+    case 'transparency': return `${baseUrl}logo-transparency.svg`;
+    case 'footer': return `${baseUrl}logo-footer.svg`;
     case 'header':
     default:
-      return '/logo-header.svg';
+      return `${baseUrl}logo-header.svg`;
   }
 });
 

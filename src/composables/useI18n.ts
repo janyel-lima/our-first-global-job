@@ -7,12 +7,13 @@ const currentLang = ref<Language>('pt');
 export const translations = {
   pt: {
     nav: {
-      about: 'Sobre Nossas Origens',
-      pillars: 'O que você vai encontrar',
-      app: 'App Oficial',
-      groups: 'WhatsApp & Telegram',
-      stories: 'Histórias Reais',
-      mission: 'Nossa Missão',
+      about: 'Origens',
+      pillars: 'Pilares',
+      app: 'App',
+      groups: 'Comunidades',
+      team: 'Equipe',
+      stories: 'Histórias',
+      mission: 'Missão',
       join: 'Fazer Parte 🍀',
       volunteer: 'Ser Voluntário'
     },
@@ -236,6 +237,80 @@ export const translations = {
         phone: '(11) 99999-9999'
       }
     },
+    team: {
+      tag: 'Liderança & Criadores',
+      title: 'Responsáveis pelo Projeto',
+      subtitle: 'Conheça os idealizadores, mentores e facilitadores voluntários dedicados a impulsionar o Our First Global Job.',
+      prevLabel: 'Anterior',
+      nextLabel: 'Próximo',
+      members: [
+        {
+          id: 1,
+          name: 'Janyel Lima',
+          role: 'Idealizador & Tech Lead',
+          badge: 'Fundador',
+          location: 'Brasil 🇧🇷',
+          bio: 'Engenheiro de Software apaixonado por comunidades open-source. Idealizou o Our First Global Job para conectar talentos brasileiros a oportunidades internacionais.',
+          avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com/janyel-lima',
+          linkedin: 'https://linkedin.com',
+          email: 'janyel@ourfirstglobaljob.org',
+          tags: ['Full Stack', 'Tech Lead', 'Open Source']
+        },
+        {
+          id: 2,
+          name: 'Camila Rocha',
+          role: 'Coordenadora de Comunidade & Mentora',
+          badge: 'Comunidade',
+          location: 'São Paulo, BR',
+          bio: 'Especialista em recrutamento global e comunicação. Conduz simulações de entrevistas comportamentais e conecta membros aos grupos de estudo.',
+          avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400',
+          github: '',
+          linkedin: 'https://linkedin.com',
+          email: 'camila@ourfirstglobaljob.org',
+          tags: ['Community', 'Career Coach', 'HR Tech']
+        },
+        {
+          id: 3,
+          name: 'Lucas Andrade',
+          role: 'Facilitador Senior de Conversação',
+          badge: 'Facilitador',
+          location: 'Lisboa, PT / Remote',
+          bio: 'Desenvolvedor Frontend sênior atuando no mercado dos EUA. Lidera encontros semanais de voz para destravar a fluência técnica e profissional.',
+          avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com',
+          linkedin: 'https://linkedin.com',
+          email: 'lucas@ourfirstglobaljob.org',
+          tags: ['Frontend', 'English Mentorship', 'Global Dev']
+        },
+        {
+          id: 4,
+          name: 'Mariana Silva',
+          role: 'Head de UX & Experiência de Aprendizado',
+          badge: 'Design',
+          location: 'Belo Horizonte, BR',
+          bio: 'Product Designer focada em acessibilidade e ed-tech. Responsável pelo design de interface e pela experiência amigável da plataforma.',
+          avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com',
+          linkedin: 'https://linkedin.com',
+          email: 'mariana@ourfirstglobaljob.org',
+          tags: ['UX/UI', 'Design System', 'EdTech']
+        },
+        {
+          id: 5,
+          name: 'Gustavo Ferreira',
+          role: 'Engenheiro de Dados & Mentor Voluntário',
+          badge: 'Mentor Tech',
+          location: 'Curitiba, BR',
+          bio: 'Engenheiro de dados em empresa canadense. Apoia a estruturação dos mini-cursos práticos e trilhas de desenvolvimento profissional.',
+          avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com',
+          linkedin: 'https://linkedin.com',
+          email: 'gustavo@ourfirstglobaljob.org',
+          tags: ['Data Engineering', 'Mentorship', 'Cloud']
+        }
+      ]
+    },
     footer: {
       description: 'Uma comunidade voluntária dedicada a ajudar profissionais brasileiros a desenvolverem confiança em inglês e conquistarem posições internacionais.',
       links: 'Navegação',
@@ -250,13 +325,14 @@ export const translations = {
   },
   en: {
     nav: {
-      about: 'About Our Origins',
-      pillars: 'What You Will Find',
-      app: 'Official App',
-      groups: 'WhatsApp & Telegram',
-      stories: 'Real Stories',
-      mission: 'Our Mission',
-      join: 'Join Community 🍀',
+      about: 'Origins',
+      pillars: 'Pillars',
+      app: 'App',
+      groups: 'Communities',
+      team: 'Team',
+      stories: 'Stories',
+      mission: 'Mission',
+      join: 'Join Us 🍀',
       volunteer: 'Become a Volunteer'
     },
     hero: {
@@ -478,6 +554,80 @@ export const translations = {
         role: 'e.g., Full Stack Dev / UX Designer',
         phone: '+1 (555) 000-0000'
       }
+    },
+    team: {
+      tag: 'Leadership & Team',
+      title: 'Who Makes It Happen',
+      subtitle: 'Meet the creators, mentors, and volunteer facilitators dedicated to empowering the Our First Global Job community.',
+      prevLabel: 'Previous',
+      nextLabel: 'Next',
+      members: [
+        {
+          id: 1,
+          name: 'Janyel Lima',
+          role: 'Founder & Tech Lead',
+          badge: 'Founder',
+          location: 'Brazil 🇧🇷',
+          bio: 'Software Engineer passionate about open-source communities. Founded Our First Global Job to bridge Brazilian tech talent with global remote career opportunities.',
+          avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com/janyel-lima',
+          linkedin: 'https://linkedin.com',
+          email: 'janyel@ourfirstglobaljob.org',
+          tags: ['Full Stack', 'Tech Lead', 'Open Source']
+        },
+        {
+          id: 2,
+          name: 'Camila Rocha',
+          role: 'Community Coordinator & Mentor',
+          badge: 'Community',
+          location: 'São Paulo, BR',
+          bio: 'International recruitment & interpersonal communication specialist. Coordinates networking events and mock English interview sessions.',
+          avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400',
+          github: '',
+          linkedin: 'https://linkedin.com',
+          email: 'camila@ourfirstglobaljob.org',
+          tags: ['Community', 'Career Coach', 'HR Tech']
+        },
+        {
+          id: 3,
+          name: 'Lucas Andrade',
+          role: 'Senior Conversation Facilitator',
+          badge: 'Facilitator',
+          location: 'Lisbon, PT / Remote',
+          bio: 'Senior Frontend Developer working for US companies. Facilitates weekly voice sessions focused on unlocking technical interview speaking confidence.',
+          avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com',
+          linkedin: 'https://linkedin.com',
+          email: 'lucas@ourfirstglobaljob.org',
+          tags: ['Frontend', 'English Mentorship', 'Global Dev']
+        },
+        {
+          id: 4,
+          name: 'Mariana Silva',
+          role: 'Head of UX & Learning Experience',
+          badge: 'Design',
+          location: 'Belo Horizonte, BR',
+          bio: 'Product Designer focused on accessibility and educational tech. Leads design system and smooth user experience across the OFGJ ecosystem.',
+          avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com',
+          linkedin: 'https://linkedin.com',
+          email: 'mariana@ourfirstglobaljob.org',
+          tags: ['UX/UI', 'Design System', 'EdTech']
+        },
+        {
+          id: 5,
+          name: 'Gustavo Ferreira',
+          role: 'Data Engineer & Volunteer Mentor',
+          badge: 'Tech Mentor',
+          location: 'Curitiba, BR',
+          bio: 'Data Engineer at a Canadian company. Supports hands-on mini-course curriculum design and career transition mentorship for developers.',
+          avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400',
+          github: 'https://github.com',
+          linkedin: 'https://linkedin.com',
+          email: 'gustavo@ourfirstglobaljob.org',
+          tags: ['Data Engineering', 'Mentorship', 'Cloud']
+        }
+      ]
     },
     footer: {
       description: 'A volunteer community dedicated to helping Brazilian professionals build confidence in spoken English and succeed in global remote careers.',

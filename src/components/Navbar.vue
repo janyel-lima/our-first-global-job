@@ -8,7 +8,7 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-3 xl:gap-6 whitespace-nowrap">
+        <nav class="hidden lg:flex items-center gap-2.5 xl:gap-5 whitespace-nowrap">
           <a href="#about" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.about }}
           </a>
@@ -25,11 +25,14 @@
           <a href="#groups" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.groups }}
           </a>
+          <a href="#mission" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+            {{ t.nav.mission }}
+          </a>
           <a href="#team" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.team }}
           </a>
-          <a href="#mission" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
-            {{ t.nav.mission }}
+          <a href="#stories" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+            {{ t.nav.stories }}
           </a>
         </nav>
 
@@ -133,7 +136,8 @@ const mobileLinks = computed(() => [
   { href: '#pillars', label: t.value.nav.pillars },
   { href: '#app', label: t.value.nav.app },
   { href: '#groups', label: t.value.nav.groups },
-  { href: '#team', label: t.value.nav.team },
   { href: '#mission', label: t.value.nav.mission },
+  { href: '#team', label: t.value.nav.team },
+  { href: '#stories', label: t.value.nav.stories },
 ]);
 </script>

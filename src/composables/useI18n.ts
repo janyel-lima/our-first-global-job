@@ -11,10 +11,10 @@ export const translations = {
       pillars: 'Pilares',
       app: 'App',
       groups: 'Comunidades',
+      mission: 'Missão',
       team: 'Equipe',
       stories: 'Histórias',
-      mission: 'Missão',
-      join: 'Fazer Parte 🍀',
+      join: 'Juntar-se 🍀',
       volunteer: 'Ser Voluntário'
     },
     hero: {
@@ -329,9 +329,9 @@ export const translations = {
       pillars: 'Pillars',
       app: 'App',
       groups: 'Communities',
+      mission: 'Mission',
       team: 'Team',
       stories: 'Stories',
-      mission: 'Mission',
       join: 'Join Us 🍀',
       volunteer: 'Become a Volunteer'
     },

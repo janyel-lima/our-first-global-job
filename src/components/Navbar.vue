@@ -15,7 +15,7 @@
           <a href="#pillars" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.pillars }}
           </a>
-          <a href="#app" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0 flex items-center gap-1.5">
+          <a href="#app-section" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0 flex items-center gap-1.5">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ofgj-emerald opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-ofgj-emerald"></span>
@@ -134,7 +134,7 @@ const mobileMenuOpen = ref(false);
 const mobileLinks = computed(() => [
   { href: '#about', label: t.value.nav.about },
   { href: '#pillars', label: t.value.nav.pillars },
-  { href: '#app', label: t.value.nav.app },
+  { href: '#app-section', label: t.value.nav.app },
   { href: '#groups', label: t.value.nav.groups },
   { href: '#mission', label: t.value.nav.mission },
   { href: '#team', label: t.value.nav.team },

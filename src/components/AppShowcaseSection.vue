@@ -1,5 +1,5 @@
 <template>
-  <section id="app" class="py-20 sm:py-28 bg-[#e4ebf5] dark:bg-[#080d21] text-slate-900 dark:text-white relative overflow-hidden transition-colors border-y border-slate-300/80 dark:border-slate-800">
+  <section id="app-section" class="py-20 sm:py-28 bg-[#e4ebf5] dark:bg-[#080d21] text-slate-900 dark:text-white relative overflow-hidden transition-colors border-y border-slate-300/80 dark:border-slate-800">
     <!-- Ambient glowing backgrounds -->
     <div class="absolute top-0 right-1/4 w-96 h-96 bg-ofgj-emerald/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-ofgj-cyan/10 rounded-full blur-3xl pointer-events-none"></div>

@@ -15,13 +15,13 @@
       <PillarsSection />
 
       <!-- Official App Showcase Section -->
-      <AppShowcaseSection @open-join="isJoinModalOpen = true" />
+      <AppShowcaseSection />
 
       <!-- WhatsApp & Telegram Community Groups Section -->
-      <CommunityGroupsSection @open-join="isJoinModalOpen = true" />
+      <CommunityGroupsSection />
 
       <!-- Mission & Motto Section -->
-      <MissionSection @open-join="isJoinModalOpen = true" />
+      <MissionSection />
 
       <!-- Team & Project Leadership Section -->
       <TeamSection @open-join="isJoinModalOpen = true" />
@@ -31,12 +31,28 @@
     </main>
 
     <!-- Footer -->
-    <Footer @open-join="isJoinModalOpen = true" />
+    <Footer 
+      @open-join="isJoinModalOpen = true" 
+      @open-terms="isTermsModalOpen = true"
+      @open-code-of-conduct="isCodeOfConductModalOpen = true"
+    />
 
     <!-- Join / Volunteer Modal -->
     <JoinModal 
       :is-open="isJoinModalOpen" 
       @close="isJoinModalOpen = false" 
+    />
+
+    <!-- Volunteer Terms Modal -->
+    <VolunteerTermsModal 
+      :is-open="isTermsModalOpen" 
+      @close="isTermsModalOpen = false" 
+    />
+
+    <!-- Code of Conduct Modal -->
+    <CodeOfConductModal 
+      :is-open="isCodeOfConductModalOpen" 
+      @close="isCodeOfConductModalOpen = false" 
     />
   </div>
 </template>
@@ -55,9 +71,13 @@ import TeamSection from './components/TeamSection.vue';
 import CommunityStories from './components/CommunityStories.vue';
 import Footer from './components/Footer.vue';
 import JoinModal from './components/JoinModal.vue';
+import VolunteerTermsModal from './components/VolunteerTermsModal.vue';
+import CodeOfConductModal from './components/CodeOfConductModal.vue';
 
 // Initialize Theme
 useTheme();
 
 const isJoinModalOpen = ref(false);
+const isTermsModalOpen = ref(false);
+const isCodeOfConductModalOpen = ref(false);
 </script>

@@ -1,5 +1,8 @@
 <template>
-  <section id="groups" class="py-20 md:py-28 relative overflow-hidden bg-[#f0f4f9] dark:bg-[#080d21] text-slate-900 dark:text-white transition-colors duration-300 border-t border-b border-slate-300/80 dark:border-ofgj-azure/20">
+  <section id="comunidade" class="py-20 md:py-28 relative overflow-hidden bg-[#f0f4f9] dark:bg-[#080d21] text-slate-900 dark:text-white transition-colors duration-300 border-t border-b border-slate-300/80 dark:border-ofgj-azure/20 scroll-mt-12">
+    <!-- Anchor link helper for #groups -->
+    <div id="groups" class="absolute -top-20"></div>
+
     <!-- Ambient Background Glows -->
     <div class="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 dark:bg-ofgj-emerald/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-cyan-500/10 dark:bg-ofgj-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -72,7 +75,7 @@
             </button>
 
             <button 
-              @click="copyInviteLink('https://chat.whatsapp.com/our-first-global-job', 'whatsapp')"
+              @click="copyInviteLink('https://chat.whatsapp.com/LiZZEd9O4ko7hYQhXIQq44', 'whatsapp')"
               class="w-full py-2 px-3 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors flex items-center justify-center gap-1.5 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800/60 cursor-pointer"
             >
               <Copy class="w-3.5 h-3.5" />
@@ -128,7 +131,7 @@
             </button>
 
             <button 
-              @click="copyInviteLink('https://t.me/ourfirstglobaljob', 'telegram')"
+              @click="copyInviteLink('https://t.me/+mwC7pnv770A4MDQx', 'telegram')"
               class="w-full py-2 px-3 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors flex items-center justify-center gap-1.5 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800/60 cursor-pointer"
             >
               <Copy class="w-3.5 h-3.5" />
@@ -158,20 +161,19 @@ import WhatsappIcon from './WhatsappIcon.vue';
 import TelegramIcon from './TelegramIcon.vue';
 import { Users, CheckCircle2, ExternalLink, Copy, ShieldCheck } from 'lucide-vue-next';
 
-const emit = defineEmits(['open-join']);
 const { t } = useI18n();
 
 const copiedGroup = ref<string | null>(null);
 
 const groupLinks: Record<string, string> = {
-  whatsapp: 'https://chat.whatsapp.com/our-first-global-job',
-  telegram: 'https://t.me/ourfirstglobaljob'
+  whatsapp: 'https://chat.whatsapp.com/LiZZEd9O4ko7hYQhXIQq44',
+  telegram: 'https://t.me/+mwC7pnv770A4MDQx'
 };
 
 const handleJoinGroup = (groupType: string) => {
   const link = groupLinks[groupType];
   if (link) {
-    emit('open-join');
+    window.open(link, '_blank');
   }
 };
 

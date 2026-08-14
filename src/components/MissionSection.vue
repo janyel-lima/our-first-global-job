@@ -63,16 +63,6 @@
             {{ t.mission.motto }}
           </div>
         </div>
-
-        <div>
-          <button 
-            @click="$emit('open-join')"
-            class="px-8 py-4 rounded-2xl font-extrabold text-base text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all transform hover:scale-105 shadow-xl shadow-ofgj-emerald/30 inline-flex items-center gap-2 cursor-pointer"
-          >
-            <span>{{ t.hero.ctaPrimary }}</span>
-            <ArrowRight class="w-5 h-5" />
-          </button>
-        </div>
       </div>
 
     </div>
@@ -82,8 +72,6 @@
 <script setup lang="ts">
 import { useI18n } from '../composables/useI18n';
 import LogoSvg from './LogoSvg.vue';
-import { ArrowRight } from 'lucide-vue-next';
 
-defineEmits(['open-join']);
 const { t } = useI18n();
 </script>

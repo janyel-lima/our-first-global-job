@@ -29,20 +29,31 @@
           </p>
 
           <!-- Core Call to Actions -->
-          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-            <button 
-              @click="$emit('open-join')"
-              class="w-full sm:w-auto px-8 py-4 rounded-2xl font-bold text-base text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all transform hover:-translate-y-1 shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2 group cursor-pointer"
+          <div class="flex flex-col sm:flex-row flex-wrap items-center justify-center lg:justify-start gap-3.5 pt-2">
+            <!-- Entrar na Comunidade (Levar para os grupos de Whats e Telegram) -->
+            <a 
+              href="#comunidade"
+              class="w-full sm:w-auto px-7 py-4 rounded-2xl font-extrabold text-base text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all transform hover:-translate-y-0.5 shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2 group cursor-pointer"
             >
               <span>{{ t.hero.ctaPrimary }}</span>
               <ArrowRight class="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </a>
+
+            <!-- Quero ser Voluntário (Abre formulário de contato com a responsável) -->
+            <button 
+              @click="$emit('open-join')"
+              class="w-full sm:w-auto px-6 py-4 rounded-2xl font-bold text-base transition-all border flex items-center justify-center gap-2 bg-white text-slate-800 border-slate-300 hover:bg-slate-50 shadow-md dark:bg-[#162146] dark:text-white dark:border-ofgj-azure/40 dark:hover:bg-[#1f2e63] transform hover:-translate-y-0.5 cursor-pointer"
+            >
+              <HeartHandshake class="w-5 h-5 text-ofgj-emerald dark:text-emerald-400" />
+              <span>{{ t.hero.ctaVolunteer }}</span>
             </button>
 
+            <!-- Conhecer o App Oficial -->
             <a 
-              href="#app"
-              class="w-full sm:w-auto px-6 py-4 rounded-2xl font-semibold text-base transition-all border flex items-center justify-center gap-2 bg-white text-slate-800 border-slate-300 hover:bg-slate-50 shadow-md dark:bg-[#162146] dark:text-white dark:border-ofgj-azure/40 dark:hover:bg-[#1f2e63]"
+              href="#app-section"
+              class="w-full sm:w-auto px-5 py-4 rounded-2xl font-semibold text-sm sm:text-base text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition-colors flex items-center justify-center gap-2"
             >
-              <Smartphone class="w-5 h-5 text-ofgj-cyan" />
+              <Smartphone class="w-4 h-4 text-ofgj-cyan" />
               <span>{{ t.hero.ctaSecondary }}</span>
             </a>
           </div>
@@ -80,15 +91,17 @@
               </div>
             </div>
 
-            <!-- Motto Callout -->
-            <div class="text-center space-y-2 mt-4">
-              <span class="inline-block text-xs font-bold uppercase tracking-widest text-ofgj-emerald bg-ofgj-emerald/10 px-3 py-1 rounded-full border border-ofgj-emerald/20">
-                {{ t.mission.motto }}
-              </span>
-              <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white">
-                Practice • Grow • Go Global
-              </h3>
-              <p class="text-xs text-slate-600 dark:text-ofgj-slate">
+            <!-- Unified Motto Header -->
+            <div class="text-center space-y-3 mt-4 flex flex-col items-center">
+              <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-gradient-to-r from-ofgj-emerald/10 via-ofgj-azure/10 to-ofgj-emerald/10 dark:from-ofgj-emerald/15 dark:via-ofgj-azure/20 dark:to-ofgj-emerald/15 border border-ofgj-emerald/30 dark:border-ofgj-emerald/40 shadow-sm backdrop-blur-sm transition-all duration-300">
+                <h3 class="text-base sm:text-lg font-black tracking-tight flex items-center gap-1.5 sm:gap-2">
+                  <span class="bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-600 dark:from-ofgj-emerald dark:via-ofgj-cyan dark:to-emerald-300 bg-clip-text text-transparent">
+                    Practice • Grow • Go Global
+                  </span>
+                  <span class="text-sm ml-0.5">🍀</span>
+                </h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-ofgj-slate max-w-xs mx-auto leading-relaxed">
                 {{ t.hero.subtitle }}
               </p>
             </div>
@@ -114,7 +127,7 @@
 <script setup lang="ts">
 import { useI18n } from '../composables/useI18n';
 import LogoSvg from './LogoSvg.vue';
-import { Sparkles, ArrowRight, Smartphone, Globe, CheckCircle2 } from 'lucide-vue-next';
+import { Sparkles, ArrowRight, Smartphone, Globe, CheckCircle2, HeartHandshake } from 'lucide-vue-next';
 
 defineEmits(['open-join']);
 const { t } = useI18n();

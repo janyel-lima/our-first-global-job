@@ -50,7 +50,7 @@
               <div class="flex flex-wrap items-center gap-3">
                 <!-- Primary Action Button: Web App -->
                 <a 
-                  :href="t.appShowcase.appUrl || 'https://app.ourfirstglobaljob.org'"
+                  :href="t.appShowcase.appUrl || 'https://janyel-lima.github.io/our-first-global-job-app/'"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="px-6 py-3.5 rounded-2xl font-black text-sm text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2 transform hover:scale-105 shrink-0"
@@ -61,7 +61,7 @@
 
                 <!-- Secondary Action Button: GitHub Repo -->
                 <a 
-                  :href="t.appShowcase.repoUrl || 'https://github.com/ourfirstglobaljob'"
+                  :href="t.appShowcase.repoUrl || 'https://github.com/janyel-lima/our-first-global-job-app'"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="px-5 py-3.5 rounded-2xl font-bold text-sm text-slate-800 dark:text-slate-100 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/90 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition-all flex items-center justify-center gap-2.5 shrink-0 shadow-sm"
@@ -90,7 +90,7 @@
                   <div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
                   <div class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></div>
                   <div class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></div>
-                  <span class="ml-2 text-[10px] text-slate-600 dark:text-ofgj-slate">app.ourfirstglobaljob.org</span>
+                  <span class="ml-2 text-[10px] text-slate-600 dark:text-ofgj-slate">janyel-lima.github.io/our-first-global-job-app</span>
                 </div>
                 <ExternalLink class="w-3.5 h-3.5 text-ofgj-emerald" />
               </div>
@@ -173,7 +173,7 @@
         <a 
           v-for="(feat, idx) in t.appShowcase.features" 
           :key="idx"
-          :href="t.appShowcase.appUrl || 'https://app.ourfirstglobaljob.org'"
+          :href="t.appShowcase.appUrl || 'https://janyel-lima.github.io/our-first-global-job-app/'"
           target="_blank"
           rel="noopener noreferrer"
           class="block p-6 rounded-2xl bg-white border border-slate-300/80 hover:border-ofgj-emerald shadow-md hover:shadow-xl dark:bg-[#121b3d] dark:border-ofgj-azure/30 dark:hover:border-ofgj-emerald/60 transition-all duration-300 space-y-3 group hover:-translate-y-1"

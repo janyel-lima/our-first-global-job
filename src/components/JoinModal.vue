@@ -5,7 +5,7 @@
       class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-sm animate-fadeIn"
       @click.self="close"
     >
-      <div class="relative w-full max-w-xl p-6 sm:p-8 rounded-3xl border shadow-2xl bg-white border-slate-200 dark:bg-[#121b3d] dark:border-ofgj-azure/40 max-h-[90vh] overflow-y-auto">
+      <div class="relative w-full max-w-lg p-6 sm:p-8 rounded-3xl border shadow-2xl bg-white border-slate-200 dark:bg-[#121b3d] dark:border-ofgj-azure/40 max-h-[90vh] overflow-y-auto">
         
         <!-- Close Button -->
         <button 
@@ -21,37 +21,14 @@
           <!-- Header -->
           <div class="text-center space-y-2">
             <div class="inline-flex p-3 rounded-2xl bg-ofgj-emerald/10 text-ofgj-emerald mb-1">
-              <Sparkles class="w-6 h-6" />
+              <HeartHandshake class="w-7 h-7" />
             </div>
             <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white">
               {{ t.modal.title }}
             </h3>
-            <p class="text-sm text-slate-600 dark:text-ofgj-slate">
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-ofgj-slate max-w-sm mx-auto leading-relaxed">
               {{ t.modal.subtitle }}
             </p>
-          </div>
-
-          <!-- Type Selector (Member vs Volunteer) -->
-          <div class="grid grid-cols-2 gap-3 p-1 rounded-2xl bg-slate-100 dark:bg-[#162146]">
-            <button
-              @click="joinType = 'member'"
-              class="py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all text-center cursor-pointer"
-              :class="joinType === 'member'
-                ? 'bg-white text-ofgj-navy shadow dark:bg-ofgj-azure dark:text-white'
-                : 'text-slate-600 dark:text-ofgj-slate hover:text-slate-900'"
-            >
-              {{ t.modal.typeMember }}
-            </button>
-
-            <button
-              @click="joinType = 'volunteer'"
-              class="py-2.5 px-3 rounded-xl text-xs sm:text-sm font-bold transition-all text-center cursor-pointer"
-              :class="joinType === 'volunteer'
-                ? 'bg-white text-ofgj-navy shadow dark:bg-ofgj-emerald dark:text-ofgj-navy'
-                : 'text-slate-600 dark:text-ofgj-slate hover:text-slate-900'"
-            >
-              {{ t.modal.typeVolunteer }}
-            </button>
           </div>
 
           <!-- Form Fields -->
@@ -65,47 +42,20 @@
                 type="text" 
                 required
                 :placeholder="t.modal.placeholders.name" 
-                class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:focus:ring-ofgj-emerald"
+                class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 placeholder:text-slate-400 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:placeholder:text-slate-500 dark:focus:bg-[#0c122b] dark:focus:ring-ofgj-emerald"
               />
             </div>
 
             <div>
               <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
-                {{ t.modal.emailLabel }} *
+                {{ t.modal.roleLabel }}
               </label>
               <input 
-                v-model="form.email"
-                type="email" 
-                required
-                :placeholder="t.modal.placeholders.email" 
-                class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:focus:ring-ofgj-emerald"
+                v-model="form.role"
+                type="text" 
+                :placeholder="t.modal.placeholders.role" 
+                class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 placeholder:text-slate-400 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:placeholder:text-slate-500 dark:focus:bg-[#0c122b] dark:focus:ring-ofgj-emerald"
               />
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
-                  {{ t.modal.roleLabel }}
-                </label>
-                <input 
-                  v-model="form.role"
-                  type="text" 
-                  :placeholder="t.modal.placeholders.role" 
-                  class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:focus:ring-ofgj-emerald"
-                />
-              </div>
-
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
-                  {{ t.modal.whatsappLabel }}
-                </label>
-                <input 
-                  v-model="form.phone"
-                  type="text" 
-                  :placeholder="t.modal.placeholders.phone" 
-                  class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:focus:ring-ofgj-emerald"
-                />
-              </div>
             </div>
 
             <div>
@@ -114,7 +64,7 @@
               </label>
               <select 
                 v-model="form.englishLevel"
-                class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:focus:ring-ofgj-emerald"
+                class="w-full px-4 py-3 rounded-xl border text-sm bg-slate-100/70 border-slate-300 focus:bg-white focus:ring-2 focus:ring-ofgj-azure outline-none text-slate-900 dark:bg-[#0c122b] dark:border-ofgj-azure/40 dark:text-white dark:focus:bg-[#0c122b] dark:focus:ring-ofgj-emerald"
               >
                 <option value="basic">{{ t.modal.levelBasic }}</option>
                 <option value="intermediate">{{ t.modal.levelIntermediate }}</option>
@@ -124,42 +74,40 @@
 
             <button 
               type="submit"
-              class="w-full py-4 rounded-xl font-extrabold text-base text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2 cursor-pointer mt-4"
+              class="w-full py-4 rounded-xl font-extrabold text-sm sm:text-base text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2 cursor-pointer mt-4"
             >
-              <span>{{ t.modal.submit }}</span>
-              <CheckCircle2 class="w-5 h-5" />
+              <WhatsappIcon className="w-5 h-5" />
+              <span>{{ t.modal.submitVolunteer }}</span>
             </button>
           </form>
         </div>
 
         <!-- Success Celebration State -->
-        <div v-else class="text-center space-y-6 py-6 animate-scaleUp">
-          <div class="w-20 h-20 mx-auto rounded-full bg-ofgj-emerald/20 text-ofgj-emerald flex items-center justify-center text-4xl shadow-inner">
+        <div v-else class="text-center space-y-6 py-4 animate-scaleUp">
+          <div class="w-16 h-16 mx-auto rounded-full bg-ofgj-emerald/20 text-ofgj-emerald flex items-center justify-center text-3xl shadow-inner">
             🍀
           </div>
 
           <div class="space-y-2">
             <h3 class="text-2xl font-black text-slate-900 dark:text-white">
-              {{ t.modal.successTitle }}
+              {{ t.modal.successVolunteerTitle }}
             </h3>
-            <p class="text-sm text-slate-600 dark:text-ofgj-slate max-w-md mx-auto">
-              {{ t.modal.successDesc }}
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-ofgj-slate max-w-md mx-auto leading-relaxed">
+              {{ t.modal.successVolunteerDesc }}
             </p>
           </div>
 
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 dark:bg-[#0c122b] dark:border-ofgj-azure/40 space-y-3">
+          <!-- Direct Volunteer Action -->
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 dark:bg-[#0c122b] dark:border-ofgj-azure/40 space-y-3">
             <a 
-              href="https://chat.whatsapp.com/our-first-global-job" 
+              :href="volunteerWhatsappUrl" 
               target="_blank" 
               rel="noopener"
-              class="w-full py-4 rounded-xl font-extrabold text-sm text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-md flex items-center justify-center gap-2"
+              class="w-full py-4 px-4 rounded-xl font-extrabold text-sm text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-lg flex items-center justify-center gap-2"
             >
               <WhatsappIcon className="w-5 h-5" />
-              <span>{{ t.modal.groupButton }}</span>
+              <span>{{ t.modal.sendVolunteerWhatsapp }}</span>
             </a>
-            <p class="text-[11px] text-slate-500 dark:text-slate-400">
-              {{ t.modal.nextLiveNotice }}
-            </p>
           </div>
 
           <button 
@@ -176,25 +124,45 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+import { ref, reactive, computed } from 'vue';
 import { useI18n } from '../composables/useI18n';
 import confetti from 'canvas-confetti';
 import WhatsappIcon from './WhatsappIcon.vue';
-import { X, Sparkles, CheckCircle2 } from 'lucide-vue-next';
+import { X, HeartHandshake } from 'lucide-vue-next';
 
 defineProps<{ isOpen: boolean }>();
 const emit = defineEmits(['close']);
 
-const { t } = useI18n();
-const joinType = ref<'member' | 'volunteer'>('member');
+const { t, language } = useI18n();
 const submitted = ref(false);
 
 const form = reactive({
   name: '',
-  email: '',
   role: '',
-  phone: '',
   englishLevel: 'intermediate'
+});
+
+const getLevelLabel = (level: string) => {
+  switch (level) {
+    case 'basic':
+      return language.value === 'pt' ? 'Iniciante' : 'Beginner';
+    case 'advanced':
+      return language.value === 'pt' ? 'Avançado / Fluente' : 'Advanced / Fluent';
+    case 'intermediate':
+    default:
+      return language.value === 'pt' ? 'Intermediário' : 'Intermediate';
+  }
+};
+
+const volunteerWhatsappUrl = computed(() => {
+  const roleStr = form.role.trim() ? form.role.trim() : 'Não informado';
+  const levelLabel = getLevelLabel(form.englishLevel);
+
+  const msg = language.value === 'pt' 
+    ? `Olá! Gostaria de me voluntariar como facilitador/professor no Our First Global Job 🍀\n\n*Nome:* ${form.name.trim()}\n*Área/Cargo:* ${roleStr}\n*Nível de Inglês:* ${levelLabel}`
+    : `Hi! I'd like to volunteer as an English facilitator/teacher at Our First Global Job 🍀\n\n*Name:* ${form.name.trim()}\n*Role:* ${roleStr}\n*English Level:* ${levelLabel}`;
+  
+  return `https://wa.me/553192243193?text=${encodeURIComponent(msg)}`;
 });
 
 const close = () => {
@@ -209,5 +177,7 @@ const handleSubmit = () => {
     spread: 70,
     origin: { y: 0.6 }
   });
+
+  window.open(volunteerWhatsappUrl.value, '_blank');
 };
 </script>

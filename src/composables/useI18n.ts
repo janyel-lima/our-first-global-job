@@ -22,6 +22,7 @@ export const translations = {
       title: 'Our First Global Job',
       subtitle: 'Desenvolva confiança, pratique inglês e conquiste sua primeira vaga internacional com apoio da comunidade brasileira.',
       ctaPrimary: 'Entrar na Comunidade Grátis 🍀',
+      ctaVolunteer: 'Quero ser Voluntário 🤝',
       ctaSecondary: 'Conhecer o App Oficial 🚀',
       stats: {
         members: 'Membros Ativos',
@@ -106,8 +107,8 @@ export const translations = {
       ctaCardDesc: 'Ambiente centralizado para agendamento de aulas de conversação ao vivo, suporte voluntário com mentores, trilhas práticas de estudo e emissão de certificados.',
       ctaButton: 'Acessar Plataforma Web',
       clickToDirect: 'Acesso instantâneo sem necessidade de cadastro prévio',
-      appUrl: 'https://app.ourfirstglobaljob.org',
-      repoUrl: 'https://github.com/ourfirstglobaljob',
+      appUrl: 'https://janyel-lima.github.io/our-first-global-job-app/',
+      repoUrl: 'https://github.com/janyel-lima/our-first-global-job-app',
       repoButton: 'Código no GitHub',
       repoTag: 'Open Source',
       mockup: {
@@ -212,29 +213,23 @@ export const translations = {
       ]
     },
     modal: {
-      title: 'Junte-se à Comunidade Our First Global Job',
-      subtitle: 'Escolha como deseja participar dessa iniciativa voluntária gratuita:',
-      typeMember: 'Quero Praticar & Buscar Minha 1ª Vaga Global',
-      typeVolunteer: 'Quero Ser Voluntário / Facilitar Sessões de Inglês',
-      nameLabel: 'Seu Nome Completo',
-      emailLabel: 'Seu E-mail principal',
-      roleLabel: 'Sua Área de Atuação',
-      whatsappLabel: 'WhatsApp / Telegram (Opcional)',
-      englishLevelLabel: 'Seu nível atual de inglês autoavaliado:',
-      levelBasic: 'Iniciante (Tenho receio de falar)',
-      levelIntermediate: 'Intermediário (Consigo entender, falta destravar)',
-      levelAdvanced: 'Avançado / Fluente (Quero ajudar outros)',
-      submit: 'Garantir Acesso à Comunidade 🍀',
-      successTitle: 'Seja bem-vindo(a) à OFGJ! 🌏🍀',
-      successDesc: 'Você faz parte dessa comunidade! Clique abaixo para entrar direto nos nossos canais no WhatsApp ou Telegram:',
-      groupButton: 'Entrar no Canal / Grupo',
+      title: 'Falar com a Responsável / Quero ser Voluntário 🍀',
+      subtitle: 'Preencha suas informações para iniciar uma conversa direta no WhatsApp com a coordenação e apoiar a iniciativa:',
+      nameLabel: 'Seu Nome / Como prefere ser chamado',
+      roleLabel: 'Sua Área de Atuação / Cargo',
+      englishLevelLabel: 'Seu nível de inglês:',
+      levelBasic: 'Iniciante (Tenho interesse em apoiar/aprender)',
+      levelIntermediate: 'Intermediário (Gostaria de facilitar conversas)',
+      levelAdvanced: 'Avançado / Fluente (Quero mentorear/dar aulas)',
+      submitVolunteer: 'Falar com a Responsável no WhatsApp 💬',
+      successVolunteerTitle: 'Mensagem Pronta para Envio! 💬',
+      successVolunteerDesc: 'Clique abaixo para abrir o WhatsApp e conversar diretamente com a responsável pelo projeto:',
+      sendVolunteerWhatsapp: 'Abrir WhatsApp e Conversar 💬',
       nextLiveNotice: 'Próximo encontro de conversação ao vivo: Quinta-feira às 19h30 🇧🇷',
       closeWindow: 'Fechar janela',
       placeholders: {
         name: 'Ex: Ana Silva',
-        email: 'seu.email@exemplo.com',
-        role: 'Ex: Full Stack Dev / UX Designer',
-        phone: '(11) 99999-9999'
+        role: 'Ex: Desenvolvedora Frontend / QA / Designer'
       }
     },
     team: {
@@ -340,6 +335,7 @@ export const translations = {
       title: 'Our First Global Job',
       subtitle: 'Build confidence, practice spoken English, and land your first international job backed by the Brazilian tech & professional community.',
       ctaPrimary: 'Join Free Community 🍀',
+      ctaVolunteer: 'Become a Volunteer 🤝',
       ctaSecondary: 'Explore Official App 🚀',
       stats: {
         members: 'Active Members',
@@ -424,8 +420,8 @@ export const translations = {
       ctaCardDesc: 'Centralized environment for scheduling live conversation classes, volunteer mentor support, practical learning paths, and issuing completion certificates.',
       ctaButton: 'Access Web Platform',
       clickToDirect: 'Instant access without requiring prior sign-up',
-      appUrl: 'https://app.ourfirstglobaljob.org',
-      repoUrl: 'https://github.com/ourfirstglobaljob',
+      appUrl: 'https://janyel-lima.github.io/our-first-global-job-app/',
+      repoUrl: 'https://github.com/janyel-lima/our-first-global-job-app',
       repoButton: 'GitHub Repository',
       repoTag: 'Open Source',
       mockup: {
@@ -530,29 +526,23 @@ export const translations = {
       ]
     },
     modal: {
-      title: 'Join Our First Global Job Community',
-      subtitle: 'Choose how you would like to participate in this free volunteer movement:',
-      typeMember: 'I Want to Practice & Seek My 1st Global Role',
-      typeVolunteer: 'I Want to Volunteer / Facilitate English Sessions',
-      nameLabel: 'Full Name',
-      emailLabel: 'Email Address',
-      roleLabel: 'Professional Role',
-      whatsappLabel: 'WhatsApp / Telegram (Optional)',
-      englishLevelLabel: 'Self-assessed English Level:',
-      levelBasic: 'Beginner (Hesitant to speak out loud)',
-      levelIntermediate: 'Intermediate (Can understand, working on speaking fluency)',
-      levelAdvanced: 'Advanced / Fluent (Excited to help facilitate)',
-      submit: 'Get Access Now 🍀',
-      successTitle: 'Welcome to OFGJ! 🌏🍀',
-      successDesc: 'You are now part of our community! Click below to join our active WhatsApp or Telegram channels:',
-      groupButton: 'Join WhatsApp / Telegram Channel',
+      title: 'Contact the Organizer / Become a Volunteer 🍀',
+      subtitle: 'Fill out your details to start a direct WhatsApp conversation with our coordinator and support the community:',
+      nameLabel: 'Full Name / Preferred Name',
+      roleLabel: 'Professional Role / Area',
+      englishLevelLabel: 'Your English Level:',
+      levelBasic: 'Beginner (Interested in supporting/learning)',
+      levelIntermediate: 'Intermediate (Would like to facilitate calls)',
+      levelAdvanced: 'Advanced / Fluent (Mentoring / Teaching)',
+      submitVolunteer: 'Contact Organizer on WhatsApp 💬',
+      successVolunteerTitle: 'Message Ready to Send! 💬',
+      successVolunteerDesc: 'Click below to open WhatsApp and chat directly with the project organizer:',
+      sendVolunteerWhatsapp: 'Open WhatsApp & Start Chat 💬',
       nextLiveNotice: 'Next live practice call: Thursday at 7:30 PM 🇧🇷',
       closeWindow: 'Close window',
       placeholders: {
         name: 'e.g., Jane Doe',
-        email: 'your.email@example.com',
-        role: 'e.g., Full Stack Dev / UX Designer',
-        phone: '+1 (555) 000-0000'
+        role: 'e.g., Frontend Developer / QA / Designer'
       }
     },
     team: {

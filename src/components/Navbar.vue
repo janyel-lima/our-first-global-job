@@ -22,7 +22,7 @@
             </span>
             {{ t.nav.app }}
           </a>
-          <a href="#groups" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#comunidade" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.groups }}
           </a>
           <a href="#mission" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
@@ -58,13 +58,13 @@
             <Moon v-else class="w-4 h-4 text-ofgj-royal shrink-0" />
           </button>
 
-          <!-- CTA Button -->
-          <button 
-            @click="$emit('open-join')"
+          <!-- CTA Button (Go to WhatsApp & Telegram groups) -->
+          <a 
+            href="#comunidade"
             class="px-3 xl:px-4 py-2.5 rounded-xl font-bold text-xs xl:text-sm text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all transform hover:-translate-y-0.5 shadow-md shadow-ofgj-emerald/20 flex items-center gap-2 cursor-pointer whitespace-nowrap shrink-0"
           >
             <span>{{ t.nav.join }}</span>
-          </button>
+          </a>
         </div>
 
         <!-- Mobile & Tablet Menu Button (shown on < lg screens) -->
@@ -106,12 +106,19 @@
       >
         {{ link.label }}
       </a>
-      <div class="pt-2">
-        <button 
-          @click="mobileMenuOpen = false; $emit('open-join')" 
-          class="w-full py-3 rounded-xl font-bold text-center text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-md"
+      <div class="pt-2 space-y-2">
+        <a 
+          href="#comunidade"
+          @click="mobileMenuOpen = false" 
+          class="block w-full py-3 rounded-xl font-bold text-center text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-md"
         >
           {{ t.nav.join }}
+        </a>
+        <button 
+          @click="mobileMenuOpen = false; $emit('open-join')" 
+          class="w-full py-3 rounded-xl font-bold text-center border bg-white dark:bg-[#162146] text-slate-800 dark:text-white border-slate-300 dark:border-ofgj-azure/40 hover:bg-slate-100 transition-all shadow-sm"
+        >
+          {{ t.nav.volunteer }}
         </button>
       </div>
     </div>
@@ -135,7 +142,7 @@ const mobileLinks = computed(() => [
   { href: '#about', label: t.value.nav.about },
   { href: '#pillars', label: t.value.nav.pillars },
   { href: '#app-section', label: t.value.nav.app },
-  { href: '#groups', label: t.value.nav.groups },
+  { href: '#comunidade', label: t.value.nav.groups },
   { href: '#mission', label: t.value.nav.mission },
   { href: '#team', label: t.value.nav.team },
   { href: '#stories', label: t.value.nav.stories },

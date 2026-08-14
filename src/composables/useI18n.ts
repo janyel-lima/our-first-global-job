@@ -646,6 +646,7 @@ export function useI18n() {
 
   return {
     lang: currentLang,
+    language: currentLang,
     t,
     toggleLanguage,
     setLanguage

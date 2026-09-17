@@ -10,7 +10,7 @@
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
         <div>
           <!-- Tag Badge -->
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-ofgj-azure/10 text-ofgj-royal dark:bg-ofgj-azure/20 dark:text-ofgj-cyan mb-4 border border-ofgj-azure/20">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-ofgj-azure/10 text-ofgj-royal dark:bg-ofgj-azure/20 dark:text-ofgj-cyan mb-4 border border-ofgj-azure/20">
             <Users class="w-3.5 h-3.5" />
             <span>{{ t.team.tag }}</span>
           </div>
@@ -185,7 +185,7 @@
         <!-- Join Team Callout -->
         <div class="flex items-center gap-4">
           <span class="text-xs text-slate-600 dark:text-ofgj-slate font-medium hidden md:inline">
-            Quer apoiar como facilitador ou mentor?
+            {{ t.team.volunteerPrompt || 'Quer apoiar como facilitadora ou mentora?' }}
           </span>
           <button 
             @click="$emit('open-join')"

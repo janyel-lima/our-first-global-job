@@ -4,7 +4,7 @@
       
       <!-- Section Title -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/10 dark:text-ofgj-emerald dark:border-ofgj-emerald/20">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/10 dark:text-ofgj-emerald dark:border-ofgj-emerald/20">
           {{ t.pillars.tag }}
         </span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
@@ -38,10 +38,10 @@
             </p>
           </div>
 
-          <div class="mt-8 flex items-center gap-2 text-xs font-bold text-ofgj-azure dark:text-ofgj-cyan">
+          <a href="#comunidade" class="mt-8 inline-flex items-center gap-2 text-xs font-bold text-ofgj-azure dark:text-ofgj-cyan hover:text-ofgj-emerald transition-colors">
             <span>{{ t.pillars.exploreAction }}</span>
             <ArrowUpRight class="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </div>
+          </a>
         </div>
 
       </div>

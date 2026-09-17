@@ -8,7 +8,7 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/20 dark:text-ofgj-emerald dark:border-ofgj-emerald/30">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/20 dark:text-ofgj-emerald dark:border-ofgj-emerald/30">
           <Smartphone class="w-4 h-4 text-ofgj-emerald" />
           <span>{{ t.appShowcase.tag }}</span>
         </div>
@@ -48,29 +48,15 @@
 
             <div class="pt-2 space-y-4">
               <div class="flex flex-wrap items-center gap-3">
-                <!-- Primary Action Button: Web App -->
+                <!-- Primary Action Button: Plataforma -->
                 <a 
                   :href="t.appShowcase.appUrl || 'https://janyel-lima.github.io/our-first-global-job-app/'"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="px-6 py-3.5 rounded-2xl font-black text-sm text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2 transform hover:scale-105 shrink-0"
+                  class="px-7 py-4 rounded-2xl font-black text-base text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-lg shadow-ofgj-emerald/25 flex items-center justify-center gap-2.5 transform hover:scale-105 shrink-0"
                 >
                   <span>{{ t.appShowcase.ctaButton }}</span>
                   <ExternalLink class="w-4 h-4" />
-                </a>
-
-                <!-- Secondary Action Button: GitHub Repo -->
-                <a 
-                  :href="t.appShowcase.repoUrl || 'https://github.com/janyel-lima/our-first-global-job-app'"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="px-5 py-3.5 rounded-2xl font-bold text-sm text-slate-800 dark:text-slate-100 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/90 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition-all flex items-center justify-center gap-2.5 shrink-0 shadow-sm"
-                >
-                  <Github class="w-4 h-4 text-slate-700 dark:text-slate-300" />
-                  <span>{{ t.appShowcase.repoButton }}</span>
-                  <span class="text-[10px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300">
-                    {{ t.appShowcase.repoTag }}
-                  </span>
                 </a>
               </div>
 
@@ -113,7 +99,7 @@
                   </span>
                 </div>
 
-                <!-- 2. Dúvidas com Professores -->
+                <!-- 2. Dúvidas com mentores -->
                 <div class="p-2.5 rounded-xl bg-white border border-slate-300/80 dark:bg-[#121b3d] dark:border-ofgj-azure/30 flex items-center justify-between shadow-sm dark:shadow-none">
                   <div class="flex items-center gap-2.5">
                     <div class="w-7 h-7 rounded-lg bg-ofgj-cyan/20 text-ofgj-azure dark:text-ofgj-cyan flex items-center justify-center font-bold text-xs shrink-0">
@@ -202,7 +188,6 @@ import {
   Zap, 
   ShieldCheck, 
   ExternalLink,
-  Github,
   Calendar,
   MessageCircle,
   GraduationCap,

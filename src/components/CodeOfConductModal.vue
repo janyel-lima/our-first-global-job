@@ -40,7 +40,7 @@
               {{ isPt ? '🤝 Nosso Compromisso:' : '🤝 Our Commitment:' }}
             </strong>
             {{ isPt 
-              ? 'O Our First Global Job é um espaço seguro e acolhedor para a troca de conhecimentos em tecnologia e a prática do inglês falado. Erros fazem parte do processo de aprendizado e são recebidos com incentivo.'
+              ? 'A Our First Global Job é um espaço seguro e acolhedor para a troca de conhecimentos em tecnologia e a prática do inglês falado. Erros fazem parte do processo de aprendizado e são recebidos com incentivo.'
               : 'Our First Global Job is a safe and welcoming space for tech knowledge sharing and spoken English practice. Mistakes are a natural part of learning and are met with encouragement.' 
             }}
           </div>

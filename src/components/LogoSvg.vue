@@ -14,7 +14,7 @@
       <span class="font-extrabold tracking-tight text-base sm:text-lg leading-tight bg-gradient-to-r from-ofgj-cyan via-ofgj-azure to-ofgj-emerald bg-clip-text text-transparent dark:from-white dark:via-ofgj-cyan dark:to-ofgj-emerald whitespace-nowrap">
         Our First Global Job
       </span>
-      <span class="text-[9px] sm:text-[10px] xl:text-[11px] font-semibold text-ofgj-emerald tracking-wider uppercase flex items-center gap-1 whitespace-nowrap shrink-0">
+      <span class="text-[9px] sm:text-[10px] xl:text-[11px] font-semibold text-ofgj-emerald tracking-wide flex items-center gap-1 whitespace-nowrap shrink-0">
         <span>Practice</span>
         <span>•</span>
         <span>Grow</span>

@@ -34,7 +34,7 @@
           <!-- Form Fields -->
           <form @submit.prevent="handleSubmit" class="space-y-4">
             <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
                 {{ t.modal.nameLabel }} *
               </label>
               <input 
@@ -47,7 +47,7 @@
             </div>
 
             <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
                 {{ t.modal.roleLabel }}
               </label>
               <input 
@@ -59,7 +59,7 @@
             </div>
 
             <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-1">
+              <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
                 {{ t.modal.englishLevelLabel }}
               </label>
               <select 
@@ -159,8 +159,8 @@ const volunteerWhatsappUrl = computed(() => {
   const levelLabel = getLevelLabel(form.englishLevel);
 
   const msg = language.value === 'pt' 
-    ? `Olá! Gostaria de me voluntariar como facilitador/professor no Our First Global Job 🍀\n\n*Nome:* ${form.name.trim()}\n*Área/Cargo:* ${roleStr}\n*Nível de Inglês:* ${levelLabel}`
-    : `Hi! I'd like to volunteer as an English facilitator/teacher at Our First Global Job 🍀\n\n*Name:* ${form.name.trim()}\n*Role:* ${roleStr}\n*English Level:* ${levelLabel}`;
+    ? `Olá! Gostaria de apoiar voluntariamente como facilitadora/mentora na comunidade Our First Global Job 🍀\n\n*Nome:* ${form.name.trim()}\n*Área/Cargo:* ${roleStr}\n*Nível de Inglês:* ${levelLabel}`
+    : `Hi! I'd like to volunteer as a facilitator / mentor at Our First Global Job 🍀\n\n*Name:* ${form.name.trim()}\n*Role:* ${roleStr}\n*English Level:* ${levelLabel}`;
   
   return `https://wa.me/553192243193?text=${encodeURIComponent(msg)}`;
 });

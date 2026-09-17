@@ -4,7 +4,7 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/10 dark:text-ofgj-emerald dark:border-ofgj-emerald/20">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/10 dark:text-ofgj-emerald dark:border-ofgj-emerald/20">
           {{ t.stories.tag }}
         </span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">

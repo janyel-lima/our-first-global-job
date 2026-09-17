@@ -4,7 +4,7 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-white text-ofgj-royal border border-slate-300 shadow-sm dark:bg-ofgj-azure/20 dark:text-ofgj-cyan dark:border-transparent">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-white text-ofgj-royal border border-slate-300 shadow-sm dark:bg-ofgj-azure/20 dark:text-ofgj-cyan dark:border-transparent">
           {{ t.obstacles.tag }}
         </span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
@@ -42,11 +42,14 @@
             </p>
           </div>
 
-          <!-- Bottom Solution Badge -->
-          <div class="mt-6 pt-4 border-t border-slate-100 dark:border-ofgj-azure/20 flex items-center gap-2 text-xs font-semibold text-ofgj-emerald">
-            <CheckCircle2 class="w-4 h-4 shrink-0" />
-            <span>{{ t.obstacles.cardSolution }}</span>
-          </div>
+          <!-- Bottom Action Link -->
+          <a 
+            href="#comunidade"
+            class="mt-6 pt-4 border-t border-slate-100 dark:border-ofgj-azure/20 flex items-center justify-between text-xs font-bold text-emerald-700 dark:text-ofgj-emerald hover:text-emerald-800 dark:hover:text-emerald-300 transition-colors group-hover:translate-x-0.5"
+          >
+            <span>{{ card.action || 'Conte com a comunidade' }}</span>
+            <span class="text-sm">→</span>
+          </a>
         </div>
       </div>
 
@@ -58,8 +61,7 @@
             {{ t.obstacles.quote }}
           </p>
           <div class="pt-2 flex items-center justify-center gap-2 text-sm font-extrabold text-ofgj-royal dark:text-ofgj-emerald">
-            <span>Our First Global Job</span>
-            <span>🌏🍀</span>
+            <span>{{ t.obstacles.signature }}</span>
           </div>
         </div>
       </div>

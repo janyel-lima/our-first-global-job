@@ -14,20 +14,23 @@
       <!-- What You Will Find / Pillars -->
       <PillarsSection />
 
-      <!-- Official App Showcase Section -->
+      <!-- Mission & Motto Section (Nosso compromisso) -->
+      <MissionSection />
+
+      <!-- Official Platform Showcase Section -->
       <AppShowcaseSection />
 
       <!-- WhatsApp & Telegram Community Groups Section -->
       <CommunityGroupsSection />
-
-      <!-- Mission & Motto Section -->
-      <MissionSection />
 
       <!-- Team & Project Leadership Section -->
       <TeamSection @open-join="isJoinModalOpen = true" />
 
       <!-- Community Stories & Impact -->
       <CommunityStories />
+
+      <!-- FAQ Section (Dúvidas frequentes) -->
+      <FAQSection />
     </main>
 
     <!-- Footer -->
@@ -69,6 +72,7 @@ import CommunityGroupsSection from './components/CommunityGroupsSection.vue';
 import MissionSection from './components/MissionSection.vue';
 import TeamSection from './components/TeamSection.vue';
 import CommunityStories from './components/CommunityStories.vue';
+import FAQSection from './components/FAQSection.vue';
 import Footer from './components/Footer.vue';
 import JoinModal from './components/JoinModal.vue';
 import VolunteerTermsModal from './components/VolunteerTermsModal.vue';

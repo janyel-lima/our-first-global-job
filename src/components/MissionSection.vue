@@ -11,7 +11,7 @@
       </div>
 
       <div class="space-y-4">
-        <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/20 dark:text-ofgj-emerald dark:border-ofgj-emerald/30">
+        <span class="inline-block px-4 py-1.5 rounded-full text-xs font-bold bg-white text-ofgj-emerald border border-slate-300 shadow-sm dark:bg-ofgj-emerald/20 dark:text-ofgj-emerald dark:border-ofgj-emerald/30">
           {{ t.mission.tag }}
         </span>
         

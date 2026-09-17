@@ -8,12 +8,15 @@
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-2.5 xl:gap-5 whitespace-nowrap">
+        <nav class="hidden lg:flex items-center gap-2 xl:gap-4 whitespace-nowrap">
           <a href="#about" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.about }}
           </a>
           <a href="#pillars" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.pillars }}
+          </a>
+          <a href="#mission" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+            {{ t.nav.mission }}
           </a>
           <a href="#app-section" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0 flex items-center gap-1.5">
             <span class="relative flex h-2 w-2">
@@ -25,14 +28,14 @@
           <a href="#comunidade" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.groups }}
           </a>
-          <a href="#mission" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
-            {{ t.nav.mission }}
-          </a>
           <a href="#team" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.team }}
           </a>
           <a href="#stories" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
             {{ t.nav.stories }}
+          </a>
+          <a href="#faq" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+            {{ t.nav.faq }}
           </a>
         </nav>
 
@@ -141,10 +144,11 @@ const mobileMenuOpen = ref(false);
 const mobileLinks = computed(() => [
   { href: '#about', label: t.value.nav.about },
   { href: '#pillars', label: t.value.nav.pillars },
+  { href: '#mission', label: t.value.nav.mission },
   { href: '#app-section', label: t.value.nav.app },
   { href: '#comunidade', label: t.value.nav.groups },
-  { href: '#mission', label: t.value.nav.mission },
   { href: '#team', label: t.value.nav.team },
   { href: '#stories', label: t.value.nav.stories },
+  { href: '#faq', label: t.value.nav.faq },
 ]);
 </script>

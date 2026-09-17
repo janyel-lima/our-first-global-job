@@ -11,7 +11,7 @@
       
       <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold border tracking-wide uppercase bg-white text-emerald-800 border-emerald-300 shadow-sm dark:bg-ofgj-emerald/10 dark:text-ofgj-emerald dark:border-ofgj-emerald/30">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold border bg-white text-emerald-800 border-emerald-300 shadow-sm dark:bg-ofgj-emerald/10 dark:text-ofgj-emerald dark:border-ofgj-emerald/30">
           <Users class="w-3.5 h-3.5 text-ofgj-emerald" />
           <span>{{ t.groups.tag }}</span>
         </div>

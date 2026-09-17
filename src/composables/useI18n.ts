@@ -130,7 +130,7 @@ export const translations = {
       ctaCardTitle: 'Plataforma oficial OFGJ',
       ctaCardDesc: 'Um espaço para agendar aulas de conversação ao vivo, tirar dúvidas com mentores voluntários, acessar trilhas práticas de estudo e emitir certificados de participação.',
       ctaButton: 'Acessar plataforma',
-      clickToDirect: 'Acesso instantâneo sem necessidade de cadastro prévio',
+      clickToDirect: 'Cadastro simples com nome, e-mail e senha para começar',
       appUrl: 'https://janyel-lima.github.io/our-first-global-job-app/',
       mockup: {
         item1Title: 'Agenda e inscrição de aulas',
@@ -202,7 +202,7 @@ export const translations = {
       nextLabel: 'Próximo',
       calloutText: 'Quer contribuir com a comunidade?',
       calloutBtn: 'Vamos conversar',
-      volunteerPrompt: 'Quer apoiar como facilitadora ou mentora?',
+      volunteerPrompt: 'Quer contribuir com a comunidade?',
       members: [
         {
           id: 1,
@@ -303,9 +303,9 @@ export const translations = {
       ]
     },
     faq: {
-      tag: 'Dúvidas frequentes',
+      tag: 'Principais dúvidas',
       title: 'Perguntas frequentes',
-      subtitle: 'Tudo o que você precisa saber sobre a nossa comunidade, os encontros e como participar.',
+      subtitle: 'Encontre respostas sobre a nossa comunidade, os encontros e como participar.',
       items: [
         {
           question: 'Como faço para participar da comunidade?',
@@ -341,7 +341,8 @@ export const translations = {
       englishLevelLabel: 'Como você se sente em relação ao seu inglês?',
       levelBasic: 'Iniciante',
       levelIntermediate: 'Intermediário',
-      levelAdvanced: 'Avançado / Fluente',
+      levelAdvanced: 'Avançado',
+      levelFluent: 'Fluente',
       submitVolunteer: 'Iniciar conversa no WhatsApp 💬',
       successVolunteerTitle: 'Mensagem pronta para envio! 💬',
       successVolunteerDesc: 'Clique abaixo para abrir o WhatsApp e conversar diretamente com a coordenação da comunidade:',
@@ -490,7 +491,7 @@ export const translations = {
       ctaCardTitle: 'Official OFGJ platform',
       ctaCardDesc: 'A space to schedule live conversation classes, ask questions with volunteer mentors, access study paths, and issue completion certificates.',
       ctaButton: 'Access platform',
-      clickToDirect: 'Instant access without requiring prior registration',
+      clickToDirect: 'Simple sign-up with name, email, and password to get started',
       appUrl: 'https://janyel-lima.github.io/our-first-global-job-app/',
       mockup: {
         item1Title: 'Class schedule and registration',
@@ -562,7 +563,7 @@ export const translations = {
       nextLabel: 'Next',
       calloutText: 'Want to contribute to the community?',
       calloutBtn: 'Let\'s talk',
-      volunteerPrompt: 'Want to support as a facilitator or mentor?',
+      volunteerPrompt: 'Want to contribute to the community?',
       members: [
         {
           id: 1,
@@ -663,9 +664,9 @@ export const translations = {
       ]
     },
     faq: {
-      tag: 'Frequently asked questions',
+      tag: 'Key questions',
       title: 'Frequently asked questions',
-      subtitle: 'Everything you need to know about our community, sessions, and how to get involved.',
+      subtitle: 'Find answers about our community, live sessions, and how to participate.',
       items: [
         {
           question: 'How do I join the community?',
@@ -701,7 +702,8 @@ export const translations = {
       englishLevelLabel: 'How do you feel about your English?',
       levelBasic: 'Beginner',
       levelIntermediate: 'Intermediate',
-      levelAdvanced: 'Advanced / Fluent',
+      levelAdvanced: 'Advanced',
+      levelFluent: 'Fluent',
       submitVolunteer: 'Start chat on WhatsApp 💬',
       successVolunteerTitle: 'Message ready to send! 💬',
       successVolunteerDesc: 'Click below to open WhatsApp and chat directly with our community coordination:',

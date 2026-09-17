@@ -69,6 +69,7 @@
                 <option value="basic">{{ t.modal.levelBasic }}</option>
                 <option value="intermediate">{{ t.modal.levelIntermediate }}</option>
                 <option value="advanced">{{ t.modal.levelAdvanced }}</option>
+                <option value="fluent">{{ t.modal.levelFluent }}</option>
               </select>
             </div>
 
@@ -146,8 +147,10 @@ const getLevelLabel = (level: string) => {
   switch (level) {
     case 'basic':
       return language.value === 'pt' ? 'Iniciante' : 'Beginner';
+    case 'fluent':
+      return language.value === 'pt' ? 'Fluente' : 'Fluent';
     case 'advanced':
-      return language.value === 'pt' ? 'Avançado / Fluente' : 'Advanced / Fluent';
+      return language.value === 'pt' ? 'Avançado' : 'Advanced';
     case 'intermediate':
     default:
       return language.value === 'pt' ? 'Intermediário' : 'Intermediate';
@@ -159,8 +162,8 @@ const volunteerWhatsappUrl = computed(() => {
   const levelLabel = getLevelLabel(form.englishLevel);
 
   const msg = language.value === 'pt' 
-    ? `Olá! Gostaria de apoiar voluntariamente como facilitadora/mentora na comunidade Our First Global Job 🍀\n\n*Nome:* ${form.name.trim()}\n*Área/Cargo:* ${roleStr}\n*Nível de Inglês:* ${levelLabel}`
-    : `Hi! I'd like to volunteer as a facilitator / mentor at Our First Global Job 🍀\n\n*Name:* ${form.name.trim()}\n*Role:* ${roleStr}\n*English Level:* ${levelLabel}`;
+    ? `Olá! Gostaria de contribuir voluntariamente com a comunidade Our First Global Job 🍀\n\n*Nome:* ${form.name.trim()}\n*Área/Cargo:* ${roleStr}\n*Nível de Inglês:* ${levelLabel}`
+    : `Hi! I'd like to volunteer and contribute to the Our First Global Job community 🍀\n\n*Name:* ${form.name.trim()}\n*Role:* ${roleStr}\n*English Level:* ${levelLabel}`;
   
   return `https://wa.me/553192243193?text=${encodeURIComponent(msg)}`;
 });

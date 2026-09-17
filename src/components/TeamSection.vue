@@ -185,13 +185,13 @@
         <!-- Join Team Callout -->
         <div class="flex items-center gap-4">
           <span class="text-xs text-slate-600 dark:text-ofgj-slate font-medium hidden md:inline">
-            {{ t.team.volunteerPrompt || 'Quer apoiar como facilitadora ou mentora?' }}
+            {{ t.team.volunteerPrompt || 'Quer contribuir com a comunidade?' }}
           </span>
           <button 
             @click="$emit('open-join')"
             class="px-5 py-2.5 rounded-xl text-xs font-bold text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all shadow-md flex items-center gap-2 cursor-pointer"
           >
-            <span>{{ t.nav.volunteer }}</span>
+            <span>{{ t.team.calloutBtn || 'Vamos conversar' }}</span>
             <HeartHandshake class="w-4 h-4" />
           </button>
         </div>

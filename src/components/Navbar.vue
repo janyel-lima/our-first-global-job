@@ -1,50 +1,50 @@
 <template>
-  <header class="sticky top-0 z-50 transition-all duration-300 border-b backdrop-blur-md bg-[#edf2f7]/90 border-slate-300/80 dark:bg-[#0c122b]/90 dark:border-ofgj-azure/20 shadow-sm dark:shadow-none">
+  <header class="sticky top-0 z-50 w-full max-w-full transition-all duration-300 border-b backdrop-blur-md bg-[#edf2f7]/95 border-slate-300/80 dark:bg-[#0c122b]/95 dark:border-ofgj-azure/20 shadow-sm dark:shadow-none">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20 gap-2 lg:gap-4">
+      <div class="flex items-center justify-between h-16 lg:h-18 gap-2 lg:gap-3">
         <!-- Logo Brand -->
-        <a href="#" class="flex items-center gap-2 sm:gap-3 focus:outline-none focus:ring-2 focus:ring-ofgj-emerald rounded-lg p-1 shrink-0">
+        <a href="#" class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-ofgj-emerald rounded-lg p-1 shrink-0">
           <LogoSvg variant="header" size="md" :show-bg="true" :with-text="true" :with-brand-name="true" />
         </a>
 
         <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-2 xl:gap-4 whitespace-nowrap">
-          <a href="#about" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+        <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1.5 2xl:gap-2.5 whitespace-nowrap">
+          <a href="#about" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.about }}
           </a>
-          <a href="#pillars" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#pillars" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.pillars }}
           </a>
-          <a href="#mission" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#mission" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.mission }}
           </a>
-          <a href="#app-section" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0 flex items-center gap-1.5">
+          <a href="#app-section" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0 flex items-center gap-1.5">
             <span class="relative flex h-2 w-2">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-ofgj-emerald opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-ofgj-emerald"></span>
             </span>
-            {{ t.nav.app }}
+            <span>{{ t.nav.app }}</span>
           </a>
-          <a href="#comunidade" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#comunidade" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.groups }}
           </a>
-          <a href="#team" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#team" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.team }}
           </a>
-          <a href="#stories" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#stories" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.stories }}
           </a>
-          <a href="#faq" class="text-xs xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure dark:text-ofgj-slate dark:hover:text-ofgj-emerald whitespace-nowrap shrink-0">
+          <a href="#faq" class="px-2 py-1.5 xl:px-2.5 rounded-lg text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-colors text-slate-700 hover:text-ofgj-azure hover:bg-slate-200/50 dark:text-ofgj-slate dark:hover:text-ofgj-emerald dark:hover:bg-white/5 whitespace-nowrap shrink-0">
             {{ t.nav.faq }}
           </a>
         </nav>
 
         <!-- Right Controls: Language, Theme, CTA -->
-        <div class="hidden lg:flex items-center gap-2 xl:gap-3 shrink-0">
+        <div class="hidden lg:flex items-center gap-1.5 xl:gap-2.5 shrink-0">
           <!-- Language Selector -->
           <button 
             @click="toggleLanguage" 
-            class="px-2.5 xl:px-3 py-1.5 rounded-full text-xs font-bold transition-all border flex items-center gap-1.5 bg-white hover:bg-slate-100 border-slate-300 text-slate-800 shadow-sm dark:bg-[#162146] dark:hover:bg-[#1e2d5c] dark:border-ofgj-azure/40 dark:text-ofgj-slate dark:shadow-none shrink-0"
+            class="px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border flex items-center gap-1.5 bg-white hover:bg-slate-100 border-slate-300 text-slate-800 shadow-sm dark:bg-[#162146] dark:hover:bg-[#1e2d5c] dark:border-ofgj-azure/40 dark:text-ofgj-slate dark:shadow-none shrink-0 cursor-pointer"
             title="Alternar idioma / Switch language"
           >
             <Globe class="w-3.5 h-3.5 text-ofgj-cyan shrink-0" />
@@ -54,7 +54,7 @@
           <!-- Theme Selector -->
           <button 
             @click="toggleTheme" 
-            class="p-2 rounded-full transition-all border bg-white hover:bg-slate-100 border-slate-300 text-slate-800 shadow-sm dark:bg-[#162146] dark:hover:bg-[#1e2d5c] dark:border-ofgj-azure/40 dark:text-ofgj-slate dark:shadow-none shrink-0"
+            class="p-2 rounded-xl transition-all border bg-white hover:bg-slate-100 border-slate-300 text-slate-800 shadow-sm dark:bg-[#162146] dark:hover:bg-[#1e2d5c] dark:border-ofgj-azure/40 dark:text-ofgj-slate dark:shadow-none shrink-0 cursor-pointer"
             :title="theme === 'dark' ? 'Modo Claro' : 'Modo Escuro'"
           >
             <Sun v-if="theme === 'dark'" class="w-4 h-4 text-amber-400 shrink-0" />
@@ -64,7 +64,7 @@
           <!-- CTA Button (Go to WhatsApp & Telegram groups) -->
           <a 
             href="#comunidade"
-            class="px-3 xl:px-4 py-2.5 rounded-xl font-bold text-xs xl:text-sm text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all transform hover:-translate-y-0.5 shadow-md shadow-ofgj-emerald/20 flex items-center gap-2 cursor-pointer whitespace-nowrap shrink-0"
+            class="px-3 xl:px-4 py-2 rounded-xl font-bold text-xs xl:text-sm text-ofgj-navy bg-ofgj-emerald hover:bg-emerald-400 transition-all transform hover:-translate-y-0.5 shadow-md shadow-ofgj-emerald/20 flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
           >
             <span>{{ t.nav.join }}</span>
           </a>

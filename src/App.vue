@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen transition-colors duration-300 bg-[#edf2f7] text-slate-900 dark:bg-[#0c122b] dark:text-white font-sans selection:bg-ofgj-emerald selection:text-ofgj-navy">
+  <div class="min-h-screen w-full max-w-full overflow-x-hidden transition-colors duration-300 bg-[#edf2f7] text-slate-900 dark:bg-[#0c122b] dark:text-white font-sans selection:bg-ofgj-emerald selection:text-ofgj-navy">
     <!-- Navigation Bar -->
     <Navbar @open-join="isJoinModalOpen = true" />
 
     <!-- Main Content Sections -->
-    <main>
+    <main class="w-full max-w-full overflow-x-hidden">
       <!-- Hero Header -->
       <HeroSection @open-join="isJoinModalOpen = true" />
 

@@ -7,11 +7,11 @@ const currentLang = ref<Language>('pt');
 export const translations = {
   pt: {
     nav: {
-      about: 'Sobre a OFGJ',
-      pillars: 'O que oferecemos',
+      about: 'Sobre',
+      pillars: 'Pilares',
+      mission: 'Compromisso',
       app: 'Plataforma',
       groups: 'Comunidade',
-      mission: 'Nosso compromisso',
       team: 'Equipe',
       stories: 'Histórias',
       faq: 'FAQ',
@@ -367,11 +367,11 @@ export const translations = {
   },
   en: {
     nav: {
-      about: 'About OFGJ',
-      pillars: 'What we offer',
+      about: 'About',
+      pillars: 'Pillars',
+      mission: 'Commitment',
       app: 'Platform',
       groups: 'Community',
-      mission: 'Our commitment',
       team: 'Team',
       stories: 'Stories',
       faq: 'FAQ',
